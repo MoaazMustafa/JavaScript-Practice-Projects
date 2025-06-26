@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #e000a8, #0000e0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 10px;
+    margin-top: 150px;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    height: fit-content;
+
+}
+
+.container nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.container nav h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.container nav form {
+    display: flex;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+}
+
+.container nav form input {
+    flex: 1;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #1d1d1d;
+    font-size: 1.2rem;
+}
+
+.container nav form button {
+    padding: 20px 30px;
+    outline: none;
+    border: none;
+    background-color: #e07000;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #f4f4f4;
+}
+.container ul li{
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.container ul li::before{
+    content: '';
+    height: 25px;
+    width:25px;
+    margin: 10px;
+    border: solid 3px #cccccc; 
+    border-radius: 50%;
+}
+.container ul  .checked {
+    text-decoration: line-through;
+}
+.container ul .checked::before{
+    background-color:#e07000;
+}
+.container ul li span{
+    position: absolute;
+    padding: 10px;
+    border-radius: 25px;
+    right: 15px;
+}
+.container ul li span:hover{
+    background-color: #ffb5b5;
+    color: #860000;
+}
