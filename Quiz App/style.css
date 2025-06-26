@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #00014b;
+    color: #222222;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #f3f3f3;
+    padding: 40px ;
+    margin: 10PX;
+    max-width: 800px;
+    width: 100%;
+    max-height: fit-content;
+    margin-top:150px ;
+    border-radius: 30px;
+}
+.container h1{
+   padding: 20px 0px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-bottom: solid 2px #222222;
+}
+.container .quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .quiz h2{
+ font-size: 1.5rem;
+    font-weight: 400;
+    flex: 1;
+    margin: 20px;
+}
+.container .quiz .answers{
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container .quiz .answers button{
+   width: 100%;
+    flex: 1;
+    padding: 10px;
+}
+.container .quiz .answers button:hover:not([disabled]){
+    background-color: #222222;
+    color: #f3f3f3;
+}
+.container .quiz .answers button:disabled{
+    cursor: no-drop;
+}
+.correct{
+    color: #008022;
+    background-color: #34f9692b;
+    border: solid 1px #008022;
+}
+.wrong{
+    color: #800000;
+    background-color: #f9343432;
+    border: solid 1px #800000;
+}
+.next-btn{
+    color: #f3f3f3;
+    background-color: #00014b;
+    padding: 10px 40px;
+    margin-top: 20px;
+    border:none;
+    display: none;
+}
