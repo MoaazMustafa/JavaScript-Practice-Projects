@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ff88;
+    font-family: sans-serif;
+    height: 100vh;
+    padding: 40px;
+}
+
+.quote-app {
+    padding: 40px;
+    background-color: #eefff7;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.quote-app h2 {
+    color: #2b2b2b;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-bottom: solid 2px #001aff;
+}
+
+.quote-app blockquote {
+    font-size: 1.5rem;
+    color: #2b2b2b;
+    padding: 20px;
+    min-width: 100%;
+    text-align: center;
+    line-height: 25px;
+    min-height: 100px;
+    font-family:  cursive;
+}
+
+.quote-app span {
+    padding: 20px;
+    min-width: 100%;
+    text-align: right;
+    line-height: 25px;
+}
+
+.quote-app div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* margin-top: 50px; */
+}
+
+.quote-app div button {
+    background-color: #001aff;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #00ff88;
+    width: 150px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
