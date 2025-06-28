@@ -45,7 +45,9 @@ input {
     width: 80%;
     outline: none;
 }
-
+.shake{
+    animation: shake .1s linear 3;
+}
 img {
     padding: 10px;
     height: 150px;
@@ -63,4 +65,26 @@ button {
     border-radius: 10px;
     width: 80%;
     padding: 10px 20px;
+}
+@keyframes shake{
+    0%{
+        border:  solid 1px red;
+        transform: translateX(0px);
+    }
+    25%{
+        border:  solid 1px red;
+        transform: translateX(2px);
+    }
+    50%{
+        border:  solid 1px red;
+        transform: translateX(0px);
+    }
+    75%{
+        border:  solid 1px red;
+        transform: translateX(-2px);
+    }
+    100%{
+        border:  solid 1px red;
+        transform: translateX(0px);
+    }
 }

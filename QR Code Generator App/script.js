@@ -10,7 +10,11 @@ async function GenerateQRCode() {
         input.value = "";
     }
     else{
-        alert("Please Enter Text Or URL")
+        // alert("Please Enter Text Or URL")
+        input.classList.add("shake")
+        setTimeout(()=>{
+            input.classList.remove("shake")
+        },1000)
     }
 
 }
