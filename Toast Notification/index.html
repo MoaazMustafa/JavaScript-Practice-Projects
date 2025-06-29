@@ -8,10 +8,13 @@
 </head>
 <body>
     <div class="buttons">
-        <button>Success</button>
-        <button>Error</button>
-        <button>Invalid</button>
+        <button onclick="toastNotification(successMsg)">Success</button>
+        <button onclick="toastNotification(errorMsg)">Error</button>
+        <button onclick="toastNotification(invalidMsg)">Invalid</button>
     </div>
-     <div id="toast"></div>
+     <div id="toastBox"></div>
+     <script src="script.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

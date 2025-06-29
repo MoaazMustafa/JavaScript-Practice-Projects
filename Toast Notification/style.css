@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
     background-color: #fff;
     height: 100vh;
+    
 }
 
 .buttons {
@@ -24,11 +26,68 @@ body {
     border:solid 1px #fff;
     border-radius: 2px;
 }
-#toast{
+#toastBox{
     position: absolute;
     bottom: 15px;
     right: 15px;
-    padding: 20px;
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
+    gap: 20px;
+}
+.toast{
+    width: 400px;
+    height: 80px;
+    font-weight: 500;
+    background-color:#ffff ;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    position: relative;
+    transform: translateX(100%);
+    transition: all ease-in-out;
+    animation: leftanim 0.3s linear forwards; 
+    
+}
+@keyframes leftanim{
+    100%{
+        transform: translateX(0%);
+    }
+}
+.toast ion-icon{
+    color: green;
+    font-size: 2rem;
+    margin: 0 20px;
+}
+.error ion-icon {
+    color: red;
+}
+.invalid ion-icon{
+    color: yellow;
+}
+.toast::after{
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: green;
+    height: 5px;
+    animation: anim 5s linear forwards;
+    position: absolute;
+}
+.toast.error::after{
+    background-color: red;
+}
+.toast.invalid::after{
+    background-color: yellow;
+}
+@keyframes anim{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width:0%;
+    }
 }
