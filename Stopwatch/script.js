@@ -1,5 +1,5 @@
 let [seconds, minutes, hours] = [0, 0, 0]
-let displayTime = document.querySelector(".h1")
+let displayTime = document.querySelector(".h1");
 let timer = null;
 function stopWatch() {
     seconds++
