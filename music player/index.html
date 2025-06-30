@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa50359355.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <nav>
+                <div class="circle"><ion-icon name="chevron-back-outline"></ion-icon></div>
+                <div class="circle"><ion-icon name="menu"></ion-icon></div>
+            </nav>
+            <img src="media/images.jpg" class="song-img ">
+            <h1>Tum Mile</h1>
+            <p>Javed Ali</p>
+
+            <audio id="song">
+                <source src="media/Tum Mile [Slowed+Reverb] - Javed Ali - CDA Records.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="input">
+
+            <div class="controls">
+                <div><ion-icon name="play-back"></ion-icon></div>
+                <div><i onclick="playPause()" class="fa-solid fa-play" id="cntrlIcon"></i></div>
+                <div><ion-icon name="play-forward"></ion-icon></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
