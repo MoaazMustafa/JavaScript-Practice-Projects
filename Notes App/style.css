@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf9a, #95c);
+    padding-top: 20px;
+    padding-left: 10%;
+}
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem ;
+    font-weight: 600;
+}
+.container .button{
+    background: linear-gradient( #9418fd, #1234fd);
+    border: 0;
+    outline: 0;
+    border-radius:40px ;
+    font-size: 1rem;
+    color:#fff ;
+    padding: 15px 24px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+
+}
+.notes-container .input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px ;
+}
+.notes-container .input-box img{
+    position: absolute;
+    padding: 8px 15px;
+    bottom: 5px ;
+    right: 5px;
+    background: #3333331f;
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+.notes-container .input-box img:hover{
+  
+   background-color: #ff002b34;
+    filter:  grayscale(100%) sepia(100%) hue-rotate(0deg);
+}
