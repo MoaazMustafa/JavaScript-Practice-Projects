@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(0, 0, 131), rgb(196, 0, 180));
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    height: 100vh;
+}
+
+.app h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.app h1 span {
+    color: #d8005d;
+    border-bottom: solid 3px #fff;
+}
+
+.app textarea {
+    width: 90%;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 50%;
+    margin: 40px 0px;
+    background: rgba(0, 0, 131, 0.167);
+    backdrop-filter: blur(100px);
+    border: 1px solid #ffffff5f;
+    color: #fff;
+    outline: 0;
+}
+.app textarea::placeholder{
+    color: #fff;
+}
+.row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 0px 40px;
+}
+
+.row select {
+    color: #fff;
+    flex: 1;
+    background: rgba(0, 0, 131, 0.167);
+    backdrop-filter: blur(100px);
+    padding: 10px 20px;
+    border-radius: 25px;
+    appearance: none;
+    outline: 0;
+    
+}
+.row option{
+    background-color: #403d84;
+}
+.row button{
+    background-color: #d8005d;
+    border-radius: 25px;
+    padding: 10px 20px ;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
