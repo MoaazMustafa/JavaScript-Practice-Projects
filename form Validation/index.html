@@ -6,80 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
     <script src="https://kit.fontawesome.com/fa50359355.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sttyle.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-
-        body {
-            background-color: #151b49;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            width: 100%;
-        }
-
-        .container {
-            background-color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-            max-width: 500px;
-            width: 100%;
-            position: relative;
-            border-radius: 5px;
-        }
-
-        .container .icon {
-            position: absolute;
-            height: 40px;
-            width: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            top: -20px;
-            left: 230px;
-            box-shadow: 0 2px 20px #2b2b2b;
-            background: #fff;
-            border-radius: 50%;
-            color: #151b49;
-            font-size: 26px;
-        }
-
-        .container form {
-            display: flex;
-            flex-direction: column;
-            min-width: 100%;
-        }
-        .main{
-            display: flex;
-        }
-        .left{
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .right{
-            flex: 3;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .right input {
-            background-color: transparent;
-            padding: 10px;
-            border: none;
-            outline: none;
-            border-bottom: 1px solid #2b2b2b;
-
-        }
-
+        
     </style>
 </head>
 
@@ -87,21 +16,31 @@
     <div class="container">
         <div class="icon"><i class="fa-brands fa-telegram fa-flip"></i></div>
         <form>
-            <div class="main">
-                <div class="left"> <label for="fullname">Full Name</label>
-                    <label for="phnumber">Phone No.</label>
-                    <label for="email">Email Id</label>
-                    <label for="textarea">Your Message</label>
-                </div>
-                <div class="right"> <input type="text" name="fullname" placeholder="Enter Your Name">
-                    <input type="number" name="phnumber" placeholder="1 234 567 890">
-                    <input type="email" name="email" placeholder="Enter Email">
-                    <textarea name="textarea" id="msg"></textarea>
-                </div>
+
+            <div><label for="fullname">Full Name</label>
+                <input type="text" name="fullname" placeholder="Enter Your Name" id="name" onkeyup="validateName()">
+                <span id="name-error"> </span>
             </div>
-            <input type="submit" value="Submit">
+            <div><label for="phnumber">Phone No.</label>
+                <input type="text" name="phnumber" placeholder="1 234 567 890" id="phone" onkeyup="validatePhone()">
+                <span id="ph-error"> </span>
+            </div>
+            <div><label for="email">Email Id</label>
+                <input type="email" name="email" placeholder="Enter Email" id="email" onkeyup="validateEmail()">
+                <span id="email-error"> </span>
+            </div>
+            <div><label for="textarea">Your Message</label>
+                <textarea name="textarea" id="msg" placeholder="Type your message here" id="msg" onkeyup="validateMsg()"></textarea>
+                <span id="msg-error"> </span>
+            </div>
+
+
+            <input onclick="return validateForm()" class="btn" type="submit" value="Submit">
+            <span id="btn-error"></span>
         </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
