@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.app{
+    background: linear-gradient( 180deg, #d74703, #d70326);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+
+}
+.selector{
+    width: 350px;
+}
+#selectField{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background: #ffffffa3;
+    border-radius:6px ;
+}
+#list{
+    width: 100%;
+    background-color: #ffffffa3;
+    border-radius: 6px;
+    overflow: hidden;
+
+}
+.hide{
+    visibility: hidden;
+}
+.options{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+.options:hover{
+    background-color: #ffffffa6;
+}

@@ -11,7 +11,7 @@ body{
     justify-content: center;
 }
 .app{
-    width: 900px;
+    width: 70%;
     display: flex;
     overflow-x:scroll ;
 }
