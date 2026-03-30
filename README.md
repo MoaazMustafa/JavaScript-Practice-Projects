@@ -1,23 +1,23 @@
-<!-- README-AI-SIGNATURE:20260329025501 -->
+<!-- README-AI-SIGNATURE:20260330025507 -->
 # JavaScript-Practice-Projects
 
-This repository is dedicated to practicing JavaScript concepts and web development skills. It contains a variety of projects that showcase different functionalities and techniques learned throughout the development journey.
+This repository is dedicated to practicing JavaScript concepts and web development skills. It contains a variety of projects that showcase different functionalities and features, allowing for hands-on learning and experimentation.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow) ![HTML](https://img.shields.io/badge/HTML-5-orange) ![CSS](https://img.shields.io/badge/CSS-3-blue)
 
 ## ✨ Key Features
 
 ### 🎨 Diverse Projects
-- Includes various applications such as a Weather App, To Do List, and a Quiz App, each demonstrating unique JavaScript functionalities.
-
-### 🔒 User Interaction
-- Implements features like password visibility toggle in the Hide Show Password app and form validation in the Form Validation project.
+- Includes various applications such as a Weather App, To Do List, and QR Code Generator.
+  
+### 🔒 Security Features
+- Implements a Hide Show Password functionality for enhanced user experience.
 
 ### 📅 Utility Applications
-- Offers practical tools like an Age Calculator, Notes App, and a Stopwatch, enhancing everyday productivity.
+- Features practical tools like an Age Calculator and Notes App for everyday use.
 
 ### 🎵 Multimedia Integration
-- Features a Music Player project that showcases audio playback capabilities alongside a user-friendly interface.
+- Contains a Music Player project that showcases audio playback capabilities.
 
 ## 🏗️ Project Structure
 
@@ -47,6 +47,10 @@ JavaScript-Practice-Projects/
 │   ├── index.html
 │   ├── script.js
 │   └── style.css
+├── Quote Generate App/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
 ├── Random Password Generator/
 │   ├── index.html
 │   ├── script.js
@@ -71,10 +75,38 @@ JavaScript-Practice-Projects/
 │   ├── index.html
 │   ├── script.js
 │   └── style.css
+├── caculator/
+│   ├── index.html
+│   └── style.css
+├── circular progress Bar/
+│   ├── index.html
+│   └── style.css
+├── coming Soon page/
+│   ├── index.html
+│   └── style.css
+├── custom select menu/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── form Validation/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── horizontal slide image/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── image change effect/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── mini Calander/
+│   ├── index.html
+│   └── style.css
 └── music player/
     ├── index.html
-    ├── script.js
-    └── media/
+    ├── media/
+    └── script.js
 ```
 
 ## 🚀 Getting Started
@@ -83,13 +115,14 @@ To get started with the projects in this repository, clone the repository and op
 
 ```bash
 git clone https://github.com/MoaazMustafa/JavaScript-Practice-Projects.git
-cd JavaScript-Practice-Projects/<Project-Name>
-open index.html
+cd JavaScript-Practice-Projects
 ```
+
+Open the `index.html` file of any project in your web browser to view and interact with it.
 
 ## 📜 Scripts
 
-The projects primarily utilize HTML, CSS, and JavaScript. Each project contains its own `index.html`, `script.js`, and `style.css` files. You can run the JavaScript files directly in the browser by opening the corresponding HTML file.
+The projects primarily use HTML, CSS, and JavaScript. You can run the JavaScript files directly in the browser as they are linked in the respective HTML files. No additional dependencies are required.
 
 ## 🤝 Contributing
 
@@ -97,4 +130,4 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is open-source and available under the MIT License. See the [LICENSE](LICENSE) file for more details.
